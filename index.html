@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Bot - Login</title>
+</head>
+
+    <style>
+        img {
+            height: 320px;
+            width: 320px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        label {
+            margin-bottom: 4px;
+        }
+
+    </style>
+
+<body>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/4233/4233813.png"/>
+    <form>
+        <label for="usuario">Usuário:</label>
+        <input name="usuario" id="usuario" required/>
+        <br>
+        <label for="senha">Senha:</label>
+        <input name="senha" type="password" id="senha" required/>
+        <button type="button" onclick="entrar()">Entrar</button>
+        <br>
+        Cadastre-se com seu nome de usuário e senha da Bet365
+    </form>
+
+</body>
+
+    <script>
+        //window.location('http://localhost:3000/teste')
+        function entrar(){
+            alert('a')
+            var usuario = localStorage.setItem('usuarioFormulario', document.getElementById('usuario'))
+            var senha = localStorage.setItem('senhaFormulario', document.getElementById('senha'))
+            if(usuario != '' && senha != ''){
+                window.location.href = 'http://localhost:3000/teste'
+            }
+            
+        }
+    </script>
+
+</html>

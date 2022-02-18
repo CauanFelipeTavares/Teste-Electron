@@ -1,0 +1,19 @@
+{
+  "name": "bot365apostaautomatica",
+  "version": "1.0.0",
+  "description": "Bot para apostar automaticamente em roleta da Bet365",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.0.1"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "express": "^4.17.3"
+  }
+}
